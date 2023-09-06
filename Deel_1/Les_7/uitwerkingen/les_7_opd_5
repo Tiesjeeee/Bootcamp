@@ -1,0 +1,15 @@
+P = 10000
+
+r = 0.028
+
+n = 1
+
+t_5 = 5
+t_15 = 15
+
+A_5 = P * (1 + r/n)**(n*t_5)
+
+A_15 = P * (1 + r/n)**(n*t_15)
+
+print(f"Na {t_5} jaar heb je {A_5:.2f} euro.")
+print(f"Na {t_15} jaar heb je {A_15:.2f} euro.")
