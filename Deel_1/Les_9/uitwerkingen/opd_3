@@ -1,0 +1,10 @@
+# Vraag de gebruiker om leeftijd, snor en diploma in te voeren
+leeftijd = int(input("Voer je leeftijd in: "))
+snor = input("Heb je een snor? (j/n): ")
+diploma = input("Heb je een diploma? (j/n): ")
+
+# Bepaal of de persoon is aangenomen met slechts één if-statement
+if (leeftijd >= 18 and snor.lower() == "j") or (leeftijd < 18 and diploma.lower() == "j"):
+    print("Je bent aangenomen!")
+else:
+    print("Je bent niet aangenomen.")

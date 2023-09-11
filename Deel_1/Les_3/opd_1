@@ -1,0 +1,14 @@
+# Prijzen van de verschillende soorten fruit
+prijs_appels = 3.40
+prijs_druiven = 2.45
+prijs_bananen = 1.95
+
+# BTW-tarief voor fruit
+btw_percentage = 0.09  # 9% BTW
+
+# Bereken de totale prijs van al het fruit
+totaal_prijs_fruit = prijs_appels + prijs_druiven + prijs_bananen
+
+# Bereken de totale BTW
+totaal_btw = totaal_prijs_fruit * btw_percentage
+print(f"De totale BTW op al het fruit is €{totaal_btw:.2f}.")

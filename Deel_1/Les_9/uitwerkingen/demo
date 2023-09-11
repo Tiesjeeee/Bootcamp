@@ -1,0 +1,11 @@
+print('Inschrijven vrachtwagenchuaffers')
+
+rijbewijs = input('vrachtwagenrijbewijs? (ja/nee)')
+paspoort = input('paspoort? (ja/nee)')
+russisch = input('beheerst u russisch')
+georgish = input('beheerst u georgish')
+
+if rijbewijs and paspoort and russisch or georgish == 'ja':
+    print('we nemen je graag aan!')
+if rijbewijs or paspoort or russisch or georgish == 'nee':
+    print('sorry, rijbewijs en paspoort en rusissisch of georgisch verplicht!')
