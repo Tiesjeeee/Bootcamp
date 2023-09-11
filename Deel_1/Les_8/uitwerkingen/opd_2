@@ -1,28 +1,33 @@
-# Vraag de gebruiker om een cijfer
-cijfer = int(input("Voer een cijfer in: "))
+# Vraag de gebruiker om een cijfer in te voeren
+cijfer = input("Voer een cijfer in tussen 1 en 10: ")
 
-# Definieer een dictionary om de cijfers en bijbehorende omschrijvingen op te slaan
-cijfer_omschrijvingen = {
-    10: "uitmuntend",
-    9: "zeer goed",
-    8: "goed",
-    7: "ruim voldoende",
-    6: "voldoende",
-    5: "bijna voldoende",
-    4: "onvoldoende",
-    3: "gering",
-    2: "slecht",
-    1: "zeer slecht"
-}
+# Controleer of de invoer een geldig getal is tussen 1 en 10
+try:
+    cijfer = float(cijfer)
+    if 1 <= cijfer <= 10:
+        # Definieer een dictionary om de cijfers en bijbehorende omschrijvingen op te slaan
+        cijfer_omschrijvingen = {
+            10: "uitmuntend",
+            9: "zeer goed",
+            8: "goed",
+            7: "ruim voldoende",
+            6: "voldoende",
+            5: "bijna voldoende",
+            4: "onvoldoende",
+            3: "gering",
+            2: "slecht",
+            1: "zeer slecht"
+        }
 
-# Controleer of het ingevoerde cijfer in de dictionary staat
-if cijfer in cijfer_omschrijvingen:
-    omschrijving = cijfer_omschrijvingen[cijfer]
+        # Bepaal de omschrijving
+        omschrijving = cijfer_omschrijvingen[cijfer]
 
-    # Controleer of het cijfer 6 of groter is en druk de gepaste boodschap af
-    if cijfer >= 6:
-        print(f"Gefeliciteerd, {omschrijving}, je resultaat is een {cijfer}")
+        # Druk een gepaste boodschap af afhankelijk van het cijfer
+        if cijfer >= 6:
+            print(f"Gefeliciteerd, {omschrijving}, je resultaat is een {cijfer}")
+        else:
+            print(f"Jammer, {omschrijving}, je resultaat is een {cijfer}")
     else:
-        print(f"{omschrijving}, je resultaat is een {cijfer}")
-else:
-    print("Ongeldig cijfer, voer een cijfer in tussen 1 en 10.")
+        print("Dit kan ik niet omzetten! Voer een cijfer in tussen 1 en 10.")
+except ValueError:
+    print("Dit kan ik niet omzetten! Voer een geldig getal in.")
