@@ -9,5 +9,3 @@ elif oppervlakte >= 80:
 totaal = prijs_m2 * oppervlakte
 
 print(f'Het totaalbedrag voor een oppervlakte van {oppervlakte} m2 is: Eur {totaal}')
-
-

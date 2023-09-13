@@ -1,6 +1,6 @@
 from time import sleep
 
-aantal_meldingen = 10
+aantal_meldingen = 1
 
 aantal = int(input('Hoeveel wilt u kopen?'))
 prijs = 1000000

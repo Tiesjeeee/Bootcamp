@@ -1,13 +1,8 @@
-age = int(input('wat is je leeftijd?'))
+age = int(input('hoe oud ben je?'))
 
-if age >= 16:
-    print('Je mag naar binnen')
+if age >= 18:
+    print('ja')
+elif age < 18:
+    print('nee')
 else:
-    if age >= 12:
-        answere = input('ben je al lid?')
-        is_member = answere == 'ja'
-        if is_member:
-            print('Je mag naar binnen')
-        is_not_member = answere == 'nee'
-        if is_not_member:
-            print('je mag niet naar binnen')
+    print('ongeldige leeftijd')
