@@ -1,0 +1,8 @@
+naam = input("Voer je naam in: ")
+leeftijd_str = input("Voer je leeftijd in: ")
+
+leeftijd = int(leeftijd_str)
+
+leeftijd_over_5_jaar = leeftijd + 5
+
+print(f"{naam}, over 5 jaar zal je {leeftijd_over_5_jaar} jaar oud zijn.")

@@ -1,8 +1,11 @@
-age = int(input('hoe oud ben je?'))
+termen = ('string','float','interger','boolean')
 
-if age >= 18:
-    print('ja')
-elif age < 18:
-    print('nee')
+term = input('Geef me een type value? ')
+
+if term in termen:
+    print('bingooooo!')
 else:
-    print('ongeldige leeftijd')
+    print('sorry, foute bingo! wil je nog eens proberen?')
+    for pipo in termen:
+        print('type')
+        print(pipo)
