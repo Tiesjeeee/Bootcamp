@@ -1,0 +1,9 @@
+woordenlijst = []
+
+for i in range(5):
+    woord = input("Voer een woord in: ")
+    woordenlijst.append(woord)  
+
+print("De ingevoerde woorden zijn:")
+for woord in woordenlijst:
+    print(woord)

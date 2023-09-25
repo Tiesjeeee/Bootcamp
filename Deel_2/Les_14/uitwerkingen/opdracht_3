@@ -1,0 +1,10 @@
+fruitsoorten = ["appel", "banaan", "perzik", "kers", "druif"]
+
+fruit = input("Voer een fruitsoort in om te verwijderen: ")
+
+if fruit in fruitsoorten:
+    fruitsoorten.remove(fruit)  
+    print(f"{fruit} is verwijderd uit de lijst van fruitsoorten.")
+    print("De bijgewerkte lijst van fruitsoorten is:", fruitsoorten)
+else:
+    print(f"{fruit} komt niet voor in de lijst van fruitsoorten.")
