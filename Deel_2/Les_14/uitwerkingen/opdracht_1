@@ -1,0 +1,7 @@
+getallenlijst = []
+
+for i in range(5):
+    getal = float(input("Voer een getal in: "))  
+    getallenlijst.append(getal)
+
+print("De ingevoerde getallen zijn:", getallenlijst)

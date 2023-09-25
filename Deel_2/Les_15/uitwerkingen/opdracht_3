@@ -1,0 +1,50 @@
+def get_integer(prompt):
+    """
+    Vraagt de gebruiker om een integer in te voeren en retourneert de ingevoerde waarde als integer.
+    """
+    while True:
+        try:
+            waarde = int(input(prompt))
+            return waarde
+        except ValueError:
+            print("Ongeldige invoer. Voer een geheel getal in.")
+
+def get_float(prompt):
+    """
+    Vraagt de gebruiker om een float in te voeren en retourneert de ingevoerde waarde als float.
+    """
+    while True:
+        try:
+            waarde = float(input(prompt))
+            return waarde
+        except ValueError:
+            print("Ongeldige invoer. Voer een getal in.")
+
+def get_string(prompt):
+    """
+    Vraagt de gebruiker om een string in te voeren en retourneert de ingevoerde waarde als string.
+    """
+    waarde = input(prompt)
+    return waarde
+
+def get_letter(prompt):
+    """
+    Vraagt de gebruiker om één letter in te voeren (alfabet) en retourneert de letter als een hoofdletter.
+    """
+    while True:
+        letter = input(prompt)
+        if len(letter) == 1 and letter.isalpha():
+            return letter.upper()
+        else:
+            print("Ongeldige invoer. Voer één letter van het alfabet in.")
+
+if __name__ == "__main__":
+    leeftijd = get_integer("Voer uw leeftijd in: ")
+    gewicht = get_float("Voer uw gewicht in (in kg): ")
+    naam = get_string("Voer uw naam in: ")
+    letter = get_letter("Voer één letter van het alfabet in: ")
+
+    print(f"Uw leeftijd is {leeftijd} jaar.")
+    print(f"Uw gewicht is {gewicht} kg.")
+    print(f"Uw naam is {naam}.")
+    print(f"De ingevoerde letter is {letter}.")

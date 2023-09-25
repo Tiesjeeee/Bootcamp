@@ -1,0 +1,11 @@
+def vermenigvuldig(a, b):
+    """
+    Retourneert het resultaat van de vermenigvuldiging van twee integers a en b.
+    """
+    resultaat = a * b
+    return resultaat
+
+getal1 = 5
+getal2 = 7
+product = vermenigvuldig(getal1, getal2)
+print(f"Het product van {getal1} en {getal2} is {product}")

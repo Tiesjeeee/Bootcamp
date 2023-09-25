@@ -1,0 +1,10 @@
+getallenlijst = [10, 20, 30, 40, 50]
+
+index = int(input("Voer een index in (0-4) om een getal te verwijderen: "))
+
+if index >= 0 and index < len(getallenlijst):
+    verwijderd_getal = getallenlijst.pop(index)  
+    print("Het verwijderde getal is:", verwijderd_getal)
+    print("De bijgewerkte lijst is:", getallenlijst)
+else:
+    print("Ongeldige index. Voer een index in tussen 0 en", len(getallenlijst) - 1)

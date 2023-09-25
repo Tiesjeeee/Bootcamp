@@ -1,0 +1,27 @@
+import random
+
+aantal_rondes = 0
+aantal_fouten = 0
+
+while True:
+    aantal_rondes += 1
+    te_raden_getal = random.randint(1, 5)
+    
+    print(f"Ronde {aantal_rondes}:")
+    
+    while True:
+        geraden_getal = int(input("Raad het getal tussen 1 en 5: "))
+
+        if geraden_getal == te_raden_getal:
+            print("\033[92mJe hebt het getal goed geraden!\033[0m")  
+            break  
+        else:
+            print("\033[91mJe hebt het getal niet goed geraden. Probeer opnieuw!\033[0m")  
+            aantal_fouten += 1
+    
+    speel_opnieuw = input("Wil je nog een ronde spelen? (ja/nee): ").lower()
+    if speel_opnieuw != "ja":
+        break
+
+print(f"Het spel is afgelopen na {aantal_rondes} rondes.")
+print(f"Je hebt {aantal_fouten} keer fout geraden.")

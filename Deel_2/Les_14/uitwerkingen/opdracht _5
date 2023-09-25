@@ -1,0 +1,12 @@
+namenlijst = ["Alice", "Bob", "Charlie", "David", "Eve"]
+
+naam = input("Voer een naam in: ")
+
+if naam in namenlijst:
+    namenlijst.remove(naam) 
+    print(f"{naam} is verwijderd uit de lijst van namen.")
+else:
+    namenlijst.append(naam) 
+    print(f"{naam} is toegevoegd aan de lijst van namen.")
+
+print("De bijgewerkte lijst van namen is:", namenlijst)

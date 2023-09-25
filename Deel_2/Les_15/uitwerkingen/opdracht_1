@@ -1,0 +1,8 @@
+def som_van_twee_getallen(a, b):
+    resultaat = a + b
+    return resultaat
+
+getal1 = 5
+getal2 = 7
+som = som_van_twee_getallen(getal1, getal2)
+print(f"De som van {getal1} en {getal2} is {som}")

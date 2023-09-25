@@ -1,0 +1,17 @@
+import random
+
+for ronde in range(3):  
+    te_raden_getal = random.randint(1, 5)
+    
+    print(f"Ronde {ronde + 1}:")
+    
+    while True:
+        geraden_getal = int(input("Raad het getal tussen 1 en 5: "))
+
+        if geraden_getal == te_raden_getal:
+            print("\033[92mJe hebt het getal goed geraden!\033[0m")  
+            break  
+        else:
+            print("\033[91mJe hebt het getal niet goed geraden. Probeer opnieuw!\033[0m")  
+
+print("Het spel is afgelopen. Bedankt voor het spelen!")
