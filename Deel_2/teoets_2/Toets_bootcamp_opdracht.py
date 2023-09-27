@@ -47,3 +47,49 @@ else:
 #OPDRACHT 7
 for i in range(1, 251):
     print(i)
+
+#OPDRACHT 8
+lijst_eten = ['appel', 'pannenkoek', 'kiwi', 'hamburger']
+
+print("Onze menukaart:")
+for gerecht in lijst_eten:
+    print(gerecht)
+
+langste_naam = ""
+for gerecht in lijst_eten:
+    if len(gerecht) > len(langste_naam):
+        langste_naam = gerecht
+
+print(f"Het eten met de langste naam is: {langste_naam}")
+
+
+
+#OPDRACHT 9
+while True:
+    try:
+        input_str = input("Voer een getal tussen 0 en 10 in: ")
+        
+        cijfer = float(input_str)
+        
+        if 0 <= cijfer <= 10:
+            break 
+        else:
+            print("Het ingevoerde getal moet tussen 0 en 10 liggen.")
+    except ValueError:
+        print("Fout: Voer een geldig getal in.")
+
+print(f"Je hebt het geldige getal {cijfer} ingevoerd.")
+
+
+#OPDRACHT 10
+MAX = 20
+getal = int(input("Voer een getal in: "))
+
+if getal > MAX:
+    print(f"Het getal is groter dan {MAX}")
+elif getal < MAX:
+    print(f"Het getal is kleiner dan {MAX}")
+else:
+    print(f"Het getal is gelijk aan {MAX}")
+
+
